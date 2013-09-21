@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:p="http://primefaces.org/ui" xmlns="http://www.w3.org/1999/xhtml" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Busca por País</title>
+<link rel="StyleSheet" type="text/css" href="../css/style.css" />
+</h:head>
+<body>
+
+<div id="bg">
+<div id="cssmenu">
+   <span style="position: absolute; left: 0; top: 0; width:100%; height:175px; z-index:-2">
+   <img src="imagens/bgmenusemlogo.png" height="175px" width="100%"/></span>
+   <span style="position: absolute; left:160"><img src="imagens/logo.png" style="margin-left:-10px; margin-bottom: 50"/></span>
+   <br></br><br></br><br></br><br></br><br></br>
+   
+   <object id="like" type="text/html" data="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/engajamundo?fref=ts" border="0" align="left" style="border:none; width:400px; padding-left:120px;position:relative;height:60px;"></object>
+   
+   <div id="listamenu">
+   <h:form>
+   <!-- opcoes visiveis a todos -->
+   <a href = "home.xhtml">Inicio</a>
+   <a href = "about.xhtml">Sobre</a>
+   <a href = "crowdfunding.xhtml">Patrocine!</a>
+   <a href = "video.xhtml">LiveStream</a>
+   <a href = "tweets.xhtml">Tweets</a>
+   <!-- apenas usuarios e admins -->
+
+	<p:commandLink action="#{controllerEngajador.visualizar}" rendered="#{controllerSession.ehAdmin}">Usuários </p:commandLink>
+	<p:commandLink action="#{controllerEngajador.criarPostagem}" rendered="#{controllerSession.estaLogado}">Postagens </p:commandLink>
+	<p:commandLink action="#{controllerEngajador.buscas}" rendered="#{controllerSession.estaLogado}">Buscas </p:commandLink>
+	<p:commandLink action="#{controllerSession.logoff}" rendered="#{controllerSession.estaLogado}"
+					value="Logoff"/>
+	
+</h:form>
+   </div>
+</div>
+	<f:view>
+		<div id="content">
+	
+		<div id="contentbox">
+			<a href="buscas.xhtml"><img id="botao" src="imagens/back.png" border="0" align="right"/></a>
+		<div id="contentboxtop">
+			<p>Busca por País</p>
+		</div>
+
+		<div id="contentboxcontent">
+			<h:form id="busca">
+			<p:growl id="growl" showSummary="false" showDetail="true" sticky="true" />
+				<h:panelGroup columns="3">
+					<p:outputLabel value="País: " for="nome" />
+					<p:inputText label="Nome" id="nome" required="true" requiredMessage="Informe o País"
+						value="#{controllerEngajador.query}">
+						<p:watermark for="nome" value="Informe o país" />
+						<f:validator validatorId="nomeValidator" />
+					</p:inputText>
+					<p:commandButton action="#{controllerEngajador.buscarEngajadorPorPais}"
+						value="Buscar" ajax="true" update=":formularioRender, :panel"></p:commandButton>
+				</h:panelGroup>
+			</h:form>
+			<br/>
+			<h:panelGroup id="panel" >
+				<h1>____________________________________________</h1><br/>
+				<h:form id="formularioRender">
+				<p:growl id="growl" showSummary="false" showDetail="true" sticky="true" />
+				<table align="center" border="0" cellspacing="0" cellpadding="10">
+					<tr><th></th><th>Nome</th><th>Sobrenome</th><th>Email</th></tr>
+					<c:forEach items="#{controllerEngajador.usuarios}" var="usuario">
+						<tr>
+						<td><p:selectBooleanCheckbox value="#{usuario.selecionado}"/></td>
+						<td><p:outputLabel value="#{usuario.nome}"></p:outputLabel></td>
+						<td><p:outputLabel value="#{usuario.sobrenome}"></p:outputLabel></td>
+						<td><p:outputLabel value="#{usuario.email}"></p:outputLabel></td>
+						</tr>
+					</c:forEach>
+				</table>
+				<p:commandButton actionListener="#{controllerEngajador.deletar}"
+						value="Deletar itens selecionados" ajax="true"  update=":formularioRender, :panel"></p:commandButton>
+				</h:form>
+			</h:panelGroup>
+		</div>
+	</div>
+	</div>
+	</f:view>
+	</div>
+</body>
+</html>

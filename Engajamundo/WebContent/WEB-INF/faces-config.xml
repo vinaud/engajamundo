@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
+	version="2.1">
+	
+	<navigation-rule>
+		<display-name>singup</display-name>
+		<from-view-id>/singup.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>sucesso</from-outcome>
+			<to-view-id>/operacaoSucesso.xhtml</to-view-id>
+			 
+		</navigation-case>
+		 
+		<navigation-case>
+			<from-outcome>erro</from-outcome>
+			<to-view-id>/operacaoFail.xhtml</to-view-id>
+			 
+		</navigation-case>
+		
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>Edicao</display-name>
+		<from-view-id>/edicao.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>sucesso</from-outcome>
+			<to-view-id>/operacaoSucesso.xhtml</to-view-id>
+			 
+		</navigation-case>
+	
+		<navigation-case>
+			<from-outcome>erro</from-outcome>
+			<to-view-id>/operacaoFail.xhtml</to-view-id>
+			 
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+			 
+		</navigation-case>
+		 
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>autenticacao</display-name>
+		<from-view-id>/home.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>admin</from-outcome>
+			<to-view-id>/boasvindas.xhtml</to-view-id>
+			
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+			 
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>autenticacao</display-name>
+		<from-view-id>/home.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>engajador</from-outcome>
+			<to-view-id>/boasvindas.xhtml</to-view-id>
+			 
+		</navigation-case>
+	
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+			 
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>buscas</display-name>
+		<from-view-id>/buscas.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>BuscarPorNome</from-outcome>
+			<to-view-id>/buscaPorNome.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+
+		<navigation-case>
+			<from-outcome>BuscarPorPais</from-outcome>
+			<to-view-id>/buscaPorPais.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	
+	<navigation-rule>
+		<display-name>buscaPorNome</display-name>
+		<from-view-id>/buscaPorNome.xhtml</from-view-id>
+		<redirect />
+		<navigation-case>
+		  
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>boasvindas</display-name>
+		<from-view-id>/boasvindas.xhtml</from-view-id>
+		
+		<navigation-case>
+		  
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>buscaPorPais</display-name>
+		<from-view-id>/buscaPorPais.xhtml</from-view-id>
+		<redirect />
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+			
+		</navigation-case>
+	
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>about</display-name>
+		<from-view-id>/about.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>postagem</display-name>
+		<from-view-id>/criarPostagem.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>erro</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>sucesso</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>crowdfunding</display-name>
+		<from-view-id>/crowdfunding.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<display-name>home</display-name>
+		<from-view-id>/home.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+			
+		</navigation-case>
+		  
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>video</display-name>
+		<from-view-id>/video.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<display-name>visualizacao</display-name>
+		<from-view-id>/visualizacao.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>logoff</from-outcome>
+			<to-view-id>/home.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Editar</from-outcome>
+			<to-view-id>/edicao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>Visualizar</from-outcome>
+			<to-view-id>/visualizacao.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>criarPostagem</from-outcome>
+			<to-view-id>/criarPostagem.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscas</from-outcome>
+			<to-view-id>/buscas.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>
+
+

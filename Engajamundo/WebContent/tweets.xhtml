@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:p="http://primefaces.org/ui" xmlns="http://www.w3.org/1999/xhtml" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>About</title>
+<link rel="StyleSheet" type="text/css" href="css/style.css" />
+</h:head>
+<body>
+
+
+<div id="bg">
+
+<div id="cssmenu">
+   <span style="position: absolute; left: 0; top: 0; width:100%; height:175px; z-index:-2">
+   <img src="imagens/bgmenusemlogo.png" height="175px" width="100%"/></span>
+   <span style="position: absolute; left:180"><img src="imagens/logo.png" style="margin-left:180px"/></span>
+   <br></br><br></br><br></br><br></br><br></br>
+   
+   <object id="like" type="text/html" data="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/engajamundo?fref=ts" border="0" align="left" style="border:none; width:400px; padding-left:120px;position:relative;height:60px;"></object>
+   
+   <div id="listamenu">
+   <!-- opcoes visiveis a todos -->
+   <a href = "home.xhtml">Inicio</a>
+   <a href = "about.xhtml">Sobre</a>
+   <a href = "crowdfunding.xhtml">Patrocine!</a>
+   <a href = "video.xhtml">LiveStream</a>
+   <a href = "tweets.xhtml">Tweets</a>
+   <br/>
+   <!-- apenas usuarios e admins -->
+<h:form>
+	<p:commandLink action="#{controllerEngajador.visualizar}" rendered="#{controllerSession.ehAdmin}">Usuários </p:commandLink>
+	<p:commandLink action="#{controllerEngajador.criarPostagem}" rendered="#{controllerSession.estaLogado}">Postagens </p:commandLink>
+	<p:commandLink action="#{controllerEngajador.buscas}" rendered="#{controllerSession.estaLogado}">Buscas </p:commandLink>
+<p:commandLink action="#{controllerSession.logoff}" rendered="#{controllerSession.estaLogado}"
+					value="Logoff"></p:commandLink></h:form>
+   </div>
+</div>
+
+
+<div id="content">
+
+<div id="contentbox">
+	<a href="home.xhtml"><img id="botao" src="imagens/back.png" border="0" align="right"/></a>
+	<div id="contentboxtop">
+		<p>#engajamundo</p>
+	</div>
+
+	<div id="contentboxcontent">
+
+		<h:form>
+			<table border="0" cellspacing="0" cellpadding="10">
+				<tr><th>Data</th><th>Nome</th><th>Texto</th></tr>
+				<c:forEach items="#{controllerTweets.tweets}" var="tweet">
+					<tr>
+					<td><p:outputLabel value="#{tweet.data}"></p:outputLabel></td>
+					<td><p:outputLabel value="#{tweet.autor}"></p:outputLabel></td>
+					<td><p:outputLabel value="#{tweet.texto}"></p:outputLabel></td>
+					</tr>
+				</c:forEach>
+			</table>
+
+</h:form>
+
+	</div>
+</div>
+
+</div>
+
+<div id="footer">
+	MIT Licence
+</div>
+
+</div>
+
+</body>
+</html>
