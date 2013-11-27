@@ -12,3 +12,7 @@
         <repoToken>yourcoverallsprojectrepositorytoken</repoToken>
     </configuration>
 </plugin>
+
+mvn install -DskipTests=true
+
+mvn test
