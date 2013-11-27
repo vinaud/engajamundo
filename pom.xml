@@ -22,8 +22,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <scope>provided</scope>
 </dependency>
 
-        </dependencies>
-        
+ 
         <dependency>
    <groupId>javax.persistence</groupId>
    <artifactId>persistence-api</artifactId>
@@ -31,6 +30,8 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <scope>provided</scope>
 </dependency>
 
+        </dependencies>
+       
         <properties>
                 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         </properties>
