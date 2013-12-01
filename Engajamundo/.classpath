@@ -33,6 +33,12 @@
                         <attribute name="maven.pomderived" value="true"/>
                 </attributes>
         </classpathentry>
+        
+         <classpathentry excluding="**" kind="src" output="target/classes" path="Engajamundo/src/main/java/command">
+                <attributes>
+                        <attribute name="maven.pomderived" value="true"/>
+                </attributes>
+        </classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/felipe/workspace/Engajamundo/lib/twitter4j-core-3.0.3.jar"/>
