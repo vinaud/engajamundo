@@ -10,7 +10,7 @@ public class TesteControleEngajador {
 
   @Test
         public void testController() {
-               ControllerEngajador controll = new ControllerEngajador();
+               ControleEngajador controll = new ControleEngajador();
                 
         }
 
