@@ -8,4 +8,10 @@ import entities.Engajador;
 
 public class TesteControleEngajador {
 
+  @Test
+        public void testControll() {
+               ControllerEngajador controll = new ControllerEngajador();
+                
+        }
+
 }
