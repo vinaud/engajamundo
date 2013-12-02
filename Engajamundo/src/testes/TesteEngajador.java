@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import entities.Engajador;
 
-public class Teste {
+public class TesteEngajador {
 
 	@Test
 	public void test() {
