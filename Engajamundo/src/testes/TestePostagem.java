@@ -14,7 +14,7 @@ public class TestePostagem {
                 assertEquals("titulo", post.getTitulo());
                  assertEquals("oiComoVai", post.getTexto());
                   assertEquals("instaPostagem", post.getTags());
-                   assertEquals("Mister", post.getLogin);
+                   assertEquals("Mister", post.getLogin());
                 
                 
         }
