@@ -4,12 +4,12 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import entities.Engajador;
+import controller.ControleEngajador;
 
 public class TesteControleEngajador {
 
   @Test
-        public void testControll() {
+        public void testController() {
                ControllerEngajador controll = new ControllerEngajador();
                 
         }
