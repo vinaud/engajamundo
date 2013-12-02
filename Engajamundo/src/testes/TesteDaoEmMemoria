@@ -7,6 +7,7 @@ import entities.Engajador;
 import entities.Postagem;
 import org.junit.*;
 import static org.junit.Assert.*;
+import dao.DaoEmMemoria;
 
 
 public class DaoEmMemoriaTest {
