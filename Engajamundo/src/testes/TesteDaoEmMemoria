@@ -8,13 +8,7 @@ import entities.Postagem;
 import org.junit.*;
 import static org.junit.Assert.*;
 
-/**
- * The class <code>DaoEmMemoriaTest</code> contains tests for the class <code>{@link DaoEmMemoria}</code>.
- *
- * @generatedBy CodePro at 02/12/13 14:06
- * @author Pablo Gabriel
- * @version $Revision: 1.0 $
- */
+
 public class DaoEmMemoriaTest {
 	/**
 	 * Run the DaoEmMemoria() constructor test.
@@ -29,57 +23,7 @@ public class DaoEmMemoriaTest {
 
 		DaoEmMemoria result = new DaoEmMemoria();
 
-		// add additional test code here
-		// An unexpected exception was thrown in user code while executing this test:
-		//    java.lang.Error: Unresolved compilation problems: 
-		//       The import javax.persistence cannot be resolved
-		//       The import javax.persistence cannot be resolved
-		//       The import javax.persistence cannot be resolved
-		//       The import javax.persistence cannot be resolved
-		//       Entity cannot be resolved to a type
-		//       Table cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Table
-		//       The attribute schema is undefined for the annotation type Table
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Id cannot be resolved to a type
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       Column cannot be resolved to a type
-		//       The attribute name is undefined for the annotation type Column
-		//       The attribute length is undefined for the annotation type Column
-		//       
-		//       at entities.Engajador.<init>(Engajador.java:3)
-		//       at dao.DaoEmMemoria.<init>(DaoEmMemoria.java:29)
+	
 		assertNotNull(result);
 	}
 
