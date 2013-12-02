@@ -2,7 +2,7 @@ package dao;
 
 import org.junit.*;
 import static org.junit.Assert.*;
-import dao.IDAOPostagem
+import dao.IDAOPostagem;
 
 public class IDAOPostagemTest {
 	/**
