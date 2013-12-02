@@ -69,7 +69,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <properties>
           <maven.compiler.source>1.6</maven.compiler.source>
                   <maven.compiler.target>1.6</maven.compiler.target>
-                  <project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+                  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         </properties>
 
         <build>
