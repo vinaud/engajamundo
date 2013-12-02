@@ -75,7 +75,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <build>
                 <sourceDirectory>Engajamundo/src</sourceDirectory>
                
-                <testSourceDirectory>Engajamundo/src/test</testSourceDirectory>
+                <testSourceDirectory>Engajamundo/src/testes</testSourceDirectory>
                 
                 <defaultGoal>install</defaultGoal>
 
