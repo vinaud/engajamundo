@@ -19,5 +19,19 @@ public class ServicoUsuarioTeste {
 			e.printStackTrace();
 		}
 	}
+	
+	@Test
+	public void testCadastro() {
+		ServicoUsuario ser = new ServicoUsuario();
+		Engajador eng = new Engajador();
+		try {
+			ser.cadastrarEngajador(eng);
+		} catch (CadastroFailException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
 
 }
