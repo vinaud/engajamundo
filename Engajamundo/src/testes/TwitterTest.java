@@ -1,4 +1,4 @@
-Public class TwitterTest()
+Public class TwitterTest
 {
 
 }
