@@ -98,6 +98,16 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                                         <version>2.0.1</version>
                                         <configuration>
                                                 <repoToken>TRIqsbY2NtNt9DEpPPvDuW1Ss5Ry4QTnZ</repoToken>
+                                                <instrumentation>
+                                                        <excludes>
+                                                                <exclude>**/Test*.class</exclude>
+                                                                <exclude>**/Test*.java</exclude>
+                                                                <exclude>**/Interface*.class</exclude>
+                                                                <exclude>**/Interface*.java</exclude>
+                                                                <exclude>**/Main*.class</exclude>
+                                                                <exclude>**/Main*.java</exclude>
+                                                        </excludes>
+                                                </instrumentation>
                                                 
                                         </configuration>
                                 </plugin>
