@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import controller.FormPaises;
 
-public class TesteFormPaisesTeste {
+public class TesteFormPaises {
 
 	@Test
 	public void test() {
