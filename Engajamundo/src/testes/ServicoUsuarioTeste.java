@@ -2,6 +2,7 @@ package testes;
 
 import static org.junit.Assert.*;
 import model.ServicoUsuario;
+import entities.Engajador;
 
 import org.junit.Test;
 
