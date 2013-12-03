@@ -10,16 +10,16 @@ import javax.persistence.Table;
 public class Crowdfunding {
 
 	@Column (name="doacao")
-	public Double valor;
+	private Double valor;
 	@Id
 	@Column (name="login", length=20)
-	public String login;
+	private String login;
 	
 	public Double getValor() {
 		return valor;
 	}
-	public void setValor(Double valor) {
-		this.valor = valor;
+	public void setValor(int i) {
+		this.valor = (double) i;
 	}
 	public String getLogin() {
 		return login;

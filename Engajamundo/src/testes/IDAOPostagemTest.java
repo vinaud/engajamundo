@@ -1,4 +1,4 @@
-package dao;
+package testes;
 
 import org.junit.*;
 import static org.junit.Assert.*;
