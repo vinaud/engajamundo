@@ -16,6 +16,7 @@ public class FormPaisesTeste {
 		List<String> selectedMovies = null;
 		selectedMovies.add("Chile");
 		f.setSelectedPaises(selectedMovies);
+		f.getPaises();
 		
 	}
 
