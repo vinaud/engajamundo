@@ -95,7 +95,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                                 <plugin>
                                         <groupId>org.eluder.coveralls</groupId>
                                         <artifactId>coveralls-maven-plugin</artifactId>
-                                        <version>1.2.0</version>
+                                        <version>2.0.1</version>
                                         <configuration>
                                                 <repoToken>TRIqsbY2NtNt9DEpPPvDuW1Ss5Ry4QTnZ</repoToken>
                                                 
