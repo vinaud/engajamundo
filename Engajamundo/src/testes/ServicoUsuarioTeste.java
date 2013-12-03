@@ -7,6 +7,7 @@ import entities.Engajador;
 import org.junit.Test;
 
 import exceptions.LoginInvalidoException;
+import exceptions.CadastroFailException;
 
 public class ServicoUsuarioTeste {
 
