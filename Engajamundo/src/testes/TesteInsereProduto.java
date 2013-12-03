@@ -5,7 +5,7 @@ import dao.DaoHibernate;
 import entities.Engajador;
 import exceptions.DaoException;
 
-public class TestaInsereProduto {
+public class TesteInsereProduto {
 	
 	public static void main(String[] args) throws DaoException {
 		
