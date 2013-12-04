@@ -7,7 +7,7 @@ import org.junit.Test;
 import controller.ControllerEngajador;
 import exceptions.DaoException;
 
-public class TesteControllerEngajadorTest {
+public class TesteControllerEngajador {
 
 	@Test
 	public void test() {
