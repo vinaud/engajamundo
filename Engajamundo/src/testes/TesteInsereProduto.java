@@ -11,7 +11,7 @@ import org.junit.Test;
 
 public class TesteInsereProduto {
 		
-		@Test, 
+		@Test
 		public  void testeInserir () throws DaoException, BuscaSemResultadoException {
 		
 		ControllerEngajador ce = new ControllerEngajador();
