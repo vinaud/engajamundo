@@ -19,7 +19,7 @@ import exceptions.CadastroFailException;
 import exceptions.DaoException;
 import exceptions.LoginInvalidoException;
 
-public class ServicoUsuarioTest2 {
+public class ServicoUsuario2Test {
 	
 	private ServicoUsuario validator;
 
