@@ -8,8 +8,7 @@ import exceptions.DaoException;
 public class TesteInsereProduto {
 	
 	@Test
-	
-	public static void testeInserir () throws DaoException {
+	public  void testeInserir () throws DaoException {
 		
 		ControllerEngajador ce = new ControllerEngajador();
 		
