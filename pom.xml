@@ -89,6 +89,23 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
                                                 <format>xml</format>
                                                 <maxmem>256m</maxmem>
                                                 <aggregate>true</aggregate>
+                                                
+                                                 <instrumentation>
+                                                        <excludes>
+                                                                <exclude>**/Test*.class</exclude>
+                                                                <exclude>**/Test*.java</exclude>
+                                                                <exclude>**/*Test.class</exclude>
+                                                                <exclude>**/*Test.java</exclude>
+                                                                <exclude>**/Teste*.class</exclude>
+                                                                <exclude>**/Teste*.java</exclude>
+                                                                <exclude>**/*Teste.class</exclude>
+                                                                <exclude>**/*Teste.java</exclude>
+                                                                <exclude>**/Interface*.class</exclude>
+                                                                <exclude>**/Interface*.java</exclude>
+                                                                <exclude>**/Main*.class</exclude>
+                                                                <exclude>**/Main*.java</exclude>
+                                                        </excludes>
+                                                </instrumentation>
                                         </configuration>
                                 </plugin>
 
