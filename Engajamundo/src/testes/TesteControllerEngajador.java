@@ -77,7 +77,7 @@ public class TesteControllerEngajador {
      * Test of cadastrarEngajador method, of class ControllerEngajador.
      */
     @Test
-    public void testCadastrarEngajador() throws DaoException {
+    public void testCadastrarEngajador() throws Exception {
         System.out.println("cadastrarEngajador");
         ControllerEngajador instance = new ControllerEngajador();
         String expResult = "";
@@ -160,7 +160,7 @@ public class TesteControllerEngajador {
      * Test of buscarEngajadorPorNome method, of class ControllerEngajador.
      */
     @Test
-    public void testBuscarEngajadorPorNome() throws DaoException {
+    public void testBuscarEngajadorPorNome() throws DaoException, BuscaSemResultadoException {
         System.out.println("buscarEngajadorPorNome");
         ControllerEngajador instance = new ControllerEngajador();
         String expResult = "";
@@ -173,7 +173,7 @@ public class TesteControllerEngajador {
      * Test of buscarEngajadorPorPais method, of class ControllerEngajador.
      */
     @Test
-    public void testBuscarEngajadorPorPais() throws DaoException {
+    public void testBuscarEngajadorPorPais() throws DaoException, BuscaSemResultadoException {
         System.out.println("buscarEngajadorPorPais");
         ControllerEngajador instance = new ControllerEngajador();
         String expResult = "";
@@ -262,7 +262,7 @@ public class TesteControllerEngajador {
      * Test of setBuscou method, of class ControllerEngajador.
      */
     @Test
-    public void testSetBuscou() throws DaoException {
+    public void testSetBuscou() throws DaoException, BuscaSemResultadoException {
         System.out.println("setBuscou");
         boolean buscou = false;
         ControllerEngajador instance = new ControllerEngajador();
