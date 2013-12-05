@@ -10,15 +10,11 @@ import exceptions.DaoException;
 public class TesteControllerEngajador {
 
 	@Test
-	public void test() {
-		try {
+	public void test() throws DaoException{
+	
 			ControllerEngajador control = new ControllerEngajador();
 			
 			control.cadastrarEngajador();
-		} catch (DaoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		
 	}
