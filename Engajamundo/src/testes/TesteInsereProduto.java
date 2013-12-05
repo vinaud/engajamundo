@@ -9,7 +9,7 @@ public class TesteInsereProduto {
 	
 	@Test
 	
-	public static void testeInserir throws DaoException (){
+	public static void testeInserir () throws DaoException {
 		
 		ControllerEngajador ce = new ControllerEngajador();
 		
