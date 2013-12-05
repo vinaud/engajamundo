@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author vinaud
  */
-public class ControllerEngajadorTest {
+public class TesteControllerEngajador {
     
-    public ControllerEngajadorTest() {
+    public TesteControllerEngajador() {
     }
 
     /**
