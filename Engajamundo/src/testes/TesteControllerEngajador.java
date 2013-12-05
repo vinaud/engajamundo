@@ -20,41 +20,32 @@ public class TesteControllerEngajador {
 	}
 	
 	@Test
-	public void testDeletar() {
-		try {
+	public void testDeletar() throws DaoException{
+	
 			ControllerEngajador control = new ControllerEngajador();
 			
 			assertEquals("false",control.deletar());
-		} catch (DaoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 		
 	}
 	
 	@Test
-	public void testBuscaNome() {
-		try {
+	public void testBuscaNome() throws DaoException{
+	
 			ControllerEngajador control = new ControllerEngajador();
 			
 			assertEquals("erro",control.buscarEngajadorPorNome());
-		} catch (DaoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		
 	}
 	
 	@Test
-	public void testBuscaPais() {
-		try {
+	public void testBuscaPais() throws DaoException{
+		
 			ControllerEngajador control = new ControllerEngajador();
 			
 			assertEquals("erro",control.buscarEngajadorPorPais());
-		} catch (DaoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		
 	}
 }
