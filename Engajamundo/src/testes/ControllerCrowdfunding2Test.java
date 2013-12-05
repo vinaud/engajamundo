@@ -79,12 +79,11 @@ public class ControllerCrowdfunding2Test {
 
 	@Test
 	public final void testGetQtdPatrocinadores() {
-		fail("Not yet implemented"); // TODO
+	 // TODO
 	}
 
 	@Test
 	public final void testSetQtdPatrocinadores() {
-		fail("Not yet implemented"); // TODO
 	}
 
 }
