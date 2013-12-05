@@ -4,6 +4,7 @@ import controller.ControllerEngajador;
 import dao.DaoHibernate;
 import entities.Engajador;
 import exceptions.DaoException;
+import exceptions.BuscaSemResultadoException;
 
 import static org.junit.Assert.*;
 
