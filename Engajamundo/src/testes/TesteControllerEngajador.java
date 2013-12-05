@@ -7,6 +7,7 @@ package testes.controller;
 import controller.ControllerEngajador;
 import entities.Engajador;
 import exceptions.DaoException;
+import exceptions.BuscaSemResultadoException;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
