@@ -19,7 +19,7 @@ import exceptions.CadastroFailException;
 import exceptions.DaoException;
 import exceptions.LoginInvalidoException;
 
-public class ServicoUsuarioTest2 {
+public class ServicoUsuarioTest {
 	
 	private ServicoUsuario validator;
 
@@ -61,6 +61,8 @@ public class ServicoUsuarioTest2 {
 		eng.setEmail("eng@gmail.com");
 		eng.setLogin("eng");
 		eng.setComentarios("fssf");
+		eng.setData_nascimento("21/07/2003");
+		eng.setPais("Brasil");
 		validator.cadastrarEngajador(eng);
 	}
 
