@@ -73,13 +73,10 @@ public class ControllerEngajador {
 	public String cadastrarEngajador() throws DaoException, CadastroFailException {
 
 		String action = "";
-		 
-	
 				servicoUsuario.cadastrarEngajador(engajador);
 				action = "sucesso";
 				FacesContext context = FacesContext.getCurrentInstance(); 
-		
-		
+	
 		return action;
 
 		
@@ -164,7 +161,7 @@ public class ControllerEngajador {
 		return usuarios;
 	}
 	
-	public List<Engajador> buscarEngajadores() throws DaoException {
+	public List<Engajador> buscarEngajadores() throws DaoException,BuscaSemResultadoException {
 		return servicoUsuario.getUsers();
 	}
 
@@ -176,7 +173,7 @@ public class ControllerEngajador {
 		return buscou;
 	}
 
-	public void setBuscou(boolean buscou) {
+	public void setBuscou(boolean buscou) throws BuscaSemResultadoException {
 		this.buscou = buscou;
 	}
 
