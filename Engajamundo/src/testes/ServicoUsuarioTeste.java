@@ -12,7 +12,7 @@ import exceptions.CadastroFailException;
 public class ServicoUsuarioTeste {
 
 	@Test
-	public void testLogin() throws LoginInvalidoException {
+	public void testLogin() throws LoginInvalidoException, CadastroFailException{
 		ServicoUsuario ser = new ServicoUsuario();
 		
 			ser.autenticar("usuario", "senha");
@@ -20,7 +20,7 @@ public class ServicoUsuarioTeste {
 	}
 	
 	@Test
-	public void testCadastro() throws LoginInvalidoException{
+	public void testCadastro() throws LoginInvalidoException, CadastroFailException{
 		ServicoUsuario ser = new ServicoUsuario();
 		Engajador eng = new Engajador();
 		
