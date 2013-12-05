@@ -70,7 +70,7 @@ public class ControllerEngajador {
             return "BuscarPorNome";
     }
 
-	public String cadastrarEngajador() throws DaoException {
+	public String cadastrarEngajador() throws DaoException, CadastroFailException {
 
 		String action = "";
 		 
@@ -130,7 +130,7 @@ public class ControllerEngajador {
 	}
 	
 	
-	public String buscarEngajadorPorNome() throws DaoException {
+	public String buscarEngajadorPorNome() throws DaoException, BuscaSemResultadoException {
 
 		String action = "";
 	
@@ -141,7 +141,7 @@ public class ControllerEngajador {
 		return action;
 	}
 	
-	public String buscarEngajadorPorPais() throws DaoException {
+	public String buscarEngajadorPorPais() throws DaoException, BuscaSemResultadoException {
 
 		String action = "";
 		
