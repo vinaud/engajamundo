@@ -70,7 +70,7 @@ public class ControllerEngajador {
             return "BuscarPorNome";
     }
 
-	public String cadastrarEngajador() {
+	public String cadastrarEngajador() throws DaoException {
 
 		String action = "";
 		 
@@ -85,7 +85,7 @@ public class ControllerEngajador {
 		
 	}
 	
-	public String deletar() {
+	public String deletar() throws DaoException{
 		
 		
 			for (int i = 0; i < usuarios.size(); i++)
@@ -130,7 +130,7 @@ public class ControllerEngajador {
 	}
 	
 	
-	public String buscarEngajadorPorNome() {
+	public String buscarEngajadorPorNome() throws DaoException {
 
 		String action = "";
 	
@@ -141,7 +141,7 @@ public class ControllerEngajador {
 		return action;
 	}
 	
-	public String buscarEngajadorPorPais() {
+	public String buscarEngajadorPorPais() throws DaoException {
 
 		String action = "";
 		
