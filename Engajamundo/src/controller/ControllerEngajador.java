@@ -46,18 +46,14 @@ public class ControllerEngajador {
 	
 	public String editar(){
 		
-		try {
+	
 			for (int i = 0; i < usuarios.size(); i++)
 			{
 				if (usuarios.get(i).isSelecionado())
 					usuarioSelecionados.add((usuarios.get(i)));
 			}  
 			return "Editar";
-		}
-		catch (Exception e)
-		{
-			return "erro";
-		}
+	
 		
 	}
 	
@@ -78,17 +74,11 @@ public class ControllerEngajador {
 
 		String action = "";
 		 
-		try {
+	
 				servicoUsuario.cadastrarEngajador(engajador);
 				action = "sucesso";
 				FacesContext context = FacesContext.getCurrentInstance(); 
-				context.addMessage(null, new FacesMessage("", engajador.getLogin() +  ", agora você faz parte do Engajamundo!"));				
-		} catch (DaoException e) {
-			action = "erro";
-			System.out.println(e);
-		} catch (CadastroFailException e) {
-		    action = "erro";
-		}
+		
 		
 		return action;
 
@@ -97,7 +87,7 @@ public class ControllerEngajador {
 	
 	public String deletar() {
 		
-		try {
+		
 			for (int i = 0; i < usuarios.size(); i++)
 			{
 				if (usuarios.get(i).isSelecionado())
@@ -107,11 +97,7 @@ public class ControllerEngajador {
 			usuarios = (List<Engajador>) servicoUsuario.getUsers();
 			
 			return "sucesso";
-		}
-		catch (Exception e)
-		{
-			return "erro";
-		}
+	
 		
 	}
 	
@@ -147,38 +133,22 @@ public class ControllerEngajador {
 	public String buscarEngajadorPorNome() {
 
 		String action = "";
-		try {
+	
 			usuarios = servicoUsuario.buscarEngajador(query);
 			selecionados(usuarios.size());
 			if (usuarios.size() > 0) buscou = true;
-		} catch (DaoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (BuscaSemResultadoException e) {
-			FacesMessage message = new FacesMessage("Não existem usuários cadastrados com esse nome!");  
-            message.setSeverity(FacesMessage.SEVERITY_ERROR);  
-            FacesContext.getCurrentInstance().addMessage("busca:nome", message);  
-			return "erro";
-		}
+	
 		return action;
 	}
 	
 	public String buscarEngajadorPorPais() {
 
 		String action = "";
-		try {
+		
 			usuarios = servicoUsuario.buscarEngajadorPorPais(query);
 			selecionados(usuarios.size());
 			if (usuarios.size() > 0) buscou = true;
-		} catch (DaoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (BuscaSemResultadoException e) {
-			FacesMessage message = new FacesMessage("Não existem usuários cadastrados nesse país!");  
-            message.setSeverity(FacesMessage.SEVERITY_ERROR);  
-            FacesContext.getCurrentInstance().addMessage("busca:nome", message);  
-			return "erro";
-		}
+	
 		return action;
 	}
 
