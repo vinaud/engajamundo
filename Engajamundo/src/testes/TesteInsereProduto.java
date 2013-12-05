@@ -5,10 +5,14 @@ import dao.DaoHibernate;
 import entities.Engajador;
 import exceptions.DaoException;
 
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
 public class TesteInsereProduto {
-	
-	@Test
-	public  void testeInserir () throws DaoException {
+		
+		@Test
+		public  void testeInserir () throws DaoException {
 		
 		ControllerEngajador ce = new ControllerEngajador();
 		
