@@ -13,15 +13,12 @@ import exceptions.DaoException;
 public class DaoHibernateTest {
 
 	@Test
-	public void testEng() {
+	public void testEng() throws DaoException {
 		Engajador eng = new Engajador();
 		DaoHibernate d = new DaoHibernate();
-		try {
+		
 			d.cadastrarEngajador(eng);
-		} catch (DaoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
 		
 	}
 	
