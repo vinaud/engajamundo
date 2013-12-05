@@ -135,7 +135,7 @@ public class TesteControllerEngajador {
         try {
             instance = new ControllerEngajador();
         } catch (DaoException ex) {
-            Logger.getLogger(ControllerEngajadorTest.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TesteControllerEngajador.class.getName()).log(Level.SEVERE, null, ex);
         }
         String expResult = "";
         String result = instance.buscas();
